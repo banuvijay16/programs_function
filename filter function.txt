@@ -1,0 +1,49 @@
+ques------
+in the given list 
+filter itemprice less than 500
+filter itemname starts with 's'
+filter itemnumber between 3000 and 4000
+
+program
+
+items = ([3456, "shoe", 6000], [4532, "shirt", 4000], [3250, "pen", 45], [3255, "pencil", 23])
+less_than_500 = lambda item: item[2] < 500
+result = list(filter(less_than_500, items))
+print(result)
+result1 = list(filter(lambda a: a[1][0] == 's',items))
+print(result1)
+result3 = list(filter(lambda a: a[0] >= 3000 and a[0] <= 4000, items))
+print(result3)
+
+output
+
+[[3250, 'pen', 45], [3255, 'pencil', 23]]
+[[3456, 'shoe', 6000], [4532, 'shirt', 4000]]
+[[3456, 'shoe', 6000], [3250, 'pen', 45], [3255, 'pencil', 23]]
+
+
+ques---------
+(subname,studentname,marks)
+students = (["maths", "anitha", 180], ["biology", "anand", 182], ["biology", "balaji", 170], ["maths", "chandru", 190])
+in student list filter 1.) name starts with 'A' 2.) marks >= 180
+
+program
+
+students = (["maths", "anitha", 180], ["biology", "anand", 182], ["biology", "balaji", 170], ["maths", "chandru", 190])
+result = list(filter(lambda item: item[1][0] == 'a' and item[2] >= 180, students))
+print(result)
+
+output
+
+[['maths', 'anitha', 180], ['biology', 'anand', 182]]
+
+
+program
+
+temp = [28, 30, 45, 15, 76, 12, 10]
+less_than_30 = list(filter(lambda x : x<=30, temp))
+print(less_than_30)
+
+output
+
+[28, 30, 15, 12, 10]

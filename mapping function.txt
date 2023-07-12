@@ -1,0 +1,50 @@
+program-1
+
+ques---------
+(subname,studentname,marks)
+students = (["maths", "anitha", 180], ["biology", "anand", 182], ["biology", "balaji", 170], ["maths", "chandru", 190])
+create another list with name and marks for 100
+
+
+students = (["maths", "anitha", 180], ["biology", "anand", 182], ["biology", "balaji", 170], ["maths", "chandru", 190])
+result = lambda item: (item[1], item[2]/2)
+out_of = list(map(result, students))
+print(out_of)
+
+
+
+output
+[('anitha', 90.0), ('anand', 91.0), ('balaji', 85.0), ('chandru', 95.0)]
+
+
+program-2
+
+ques------
+val = [72, 78,99, 12, 56] 
+expected result  ['even', 'even', 'odd', 'even', 'even']
+
+
+val = [72, 78,99, 12, 56]
+odd_even = list(map(lambda a: "even" if a % 2 ==0 else "odd", val))
+print(odd_even)
+
+
+output
+['even', 'even', 'odd', 'even', 'even']
+
+
+program-3
+
+ques-------
+convert temp[102,99,89,70,103] in Faherenhiet to Celcius
+
+celcius = [102, 99, 89, 70, 103]
+c_f = list(map(lambda x : float("{:.2f}".format((x * 1.8) + 32)), celcius))
+print(c_f)
+
+output
+[215.6, 210.2, 192.2, 158.0, 217.4]
+
+
+
+

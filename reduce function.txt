@@ -1,0 +1,14 @@
+program
+
+import functools
+val = [4, 1, 2, 3, 4]
+sum = functools.reduce(lambda x, y: x+y, val)
+print(sum)
+char = ['p', 'y', 't', 'h', 'o', 'n']
+word = functools.reduce(lambda x, y: x+y, char)
+print(word)
+
+output
+
+14
+python
